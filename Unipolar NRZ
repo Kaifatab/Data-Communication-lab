@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+data = input("Enter the binary sequence: ")
+l = len(data)
+
+x = []
+y = []
+
+for i in range(l+1) :
+    x.append(i)
+
+y = [int(data[0])]
+for i in range(l) :
+    y.append(int(data[i]))
+
+print(x)
+print(y)  
+
+plt.step(x,y)
+plt.show()
